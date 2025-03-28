@@ -1,0 +1,51 @@
+<div class="container">
+  <button class="btn btn-success" (click)="navigateToAdmin()">Go To Admin</button>
+  <div class="row">
+    <div class="col-6">
+      1. Interpolation
+      <p>firstName => {{ firstName }}</p>
+      <div>
+        {{ rollNumber }}
+      </div>
+      <span>{{ isActive }}</span>
+    </div>
+    <div class="col-6">
+      <input type="text" [value]="firstName" />
+      <br />
+      <input type="text" [placeholder]="myPlaceHolder" name="" id="" />
+      <br />
+      <div style="height: 100px; width: 100px" [className]="div1ClassName"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <!-- <button class="btn btn-success" (click)="showUsers()">
+        Show Welcome Text
+      </button> -->
+    </div>
+    <div class="col-3">
+      <select (change)="onCityChange()">
+        <option value="Cordoba">Córdoba</option>
+        <option value="Posadas">Posadas</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Lugo">Lugo</option>
+      </select>
+    </div>
+  </div>
+  <div>
+    <div class="col-3">
+      <input type="text" [(ngModel)]="firstName" />
+    </div>
+    <div class="col-3">
+      <select [(ngModel)]="selectedCity">
+        <option value="Cordoba">Córdoba</option>
+        <option value="Posadas">Posadas</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Lugo">Lugo</option>
+      </select>
+      - {{ selectedCity }}
+    </div>
+  </div>
+</div>

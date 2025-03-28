@@ -74,12 +74,12 @@
                 </thead>
                 <tbody>
                     @for(employee of employeeArray; track $index){
-                        <tr>
-                            <td>{{$index + 1}}</td>
-                            <td>{{employee.name}}</td>
-                            <td>{{employee.city}}</td>
-                            <td>{{employee.contactNumber}}</td>
-                        </tr>
+                    <tr>
+                        <td>{{$index + 1}}</td>
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.city}}</td>
+                        <td>{{employee.contactNumber}}</td>
+                    </tr>
                     }
                 </tbody>
             </table>

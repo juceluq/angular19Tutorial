@@ -3,6 +3,8 @@ import { ControlStatementComponent } from './components/control-statement/contro
 import { AdminComponent } from './components/admin/admin.component';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
+import { SignalComponent } from './components/signal/signal.component';
+import { LinkedSignalComponent } from './components/linked-signal/linked-signal.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +27,13 @@ export const routes: Routes = [
     {
         path: 'controlFlow',
         component: ControlStatementComponent
+    },
+    {
+        path: 'signal',
+        component: SignalComponent
+    },
+    {
+        path: 'linkedSignal',
+        component: LinkedSignalComponent
     }
 ];

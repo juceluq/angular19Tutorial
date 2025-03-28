@@ -1,6 +1,14 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" routerLink="admin">Navbar</a>
+        <a routerLink="admin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 100">
+                <rect width="100" height="100" rx="15" fill="#0d6efd" />
+                <text x="50%" y="55%" font-family="Arial, sans-serif" font-size="50" fill="white" font-weight="bold"
+                    text-anchor="middle" alignment-baseline="middle">
+                    B
+                </text>
+            </svg>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,16 +16,35 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="admin">Admin</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" [routerLink]="'dataBinding'">Data-Binding</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="ngClass">ngClass</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Directive
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="dropdown-item" routerLink="ngClass">ngClass</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item" routerLink="controlFlow">controlFlow</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="controlFlow">controlFlow</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Signals
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="dropdown-item" routerLink="signal">Signal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item" routerLink="linkedSignal">Linked-Signal</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <form class="d-flex" role="search">
